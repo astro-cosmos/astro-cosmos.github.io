@@ -85,26 +85,27 @@ footer {
     }
 }
 
-/* Centrar la figura */
+/* Centrar la figura y asegurar que todo el contenido dentro esté alineado */
 figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
-    max-width: 100%; /* Esto asegura que el figure no se desborde */
-}
-
-/* Ajustar la imagen para que no se salga del contenedor */
-figure img {
-    max-width: 100%;
-    height: auto; /* Mantener la proporción de la imagen */
     display: block;
+    text-align: center;
+    margin: 20px auto; /* Asegura que haya un margen alrededor */
+    max-width: 600px; /* Ajusta este valor si prefieres un tamaño máximo diferente */
+    width: 100%; /* Asegura que se ajuste bien en pantallas más pequeñas */
 }
 
-/* Alinear el figcaption y asegurarse de que tenga el ancho adecuado */
-figure figcaption {
-    text-align: center;
-    max-width: 100%; /* Para asegurarse que el texto no se salga del ancho de la imagen */
-    margin-top: 10px; /* Un pequeño margen para separar la leyenda de la imagen */
-    padding: 0 10px; /* Un poco de espacio lateral si el texto es muy largo */
+/* Ajustar la imagen para que se mantenga dentro del figure */
+figure img {
+    max-width: 100%; /* Asegura que la imagen nunca se desborde */
+    height: auto; /* Mantener las proporciones */
 }
+
+/* Alinear el texto de la leyenda debajo de la imagen */
+figure figcaption {
+    margin-top: 10px; /* Espacio entre la imagen y la leyenda */
+    text-align: center; /* Alinear el texto en el centro */
+    font-size: 0.9em; /* Un tamaño de texto más pequeño para la leyenda */
+    max-width: 100%; /* Asegurar que no se desborde el texto de la leyenda */
+    word-wrap: break-word; /* Para evitar que palabras largas se desborden */
+}
+
