@@ -85,3 +85,19 @@ footer {
     }
 }
 
+figure {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    max-width: 300px; /* O el ancho que quieras */
+    margin: 0 auto;
+    text-align: center;
+}
