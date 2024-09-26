@@ -1,4 +1,3 @@
-
 name: Generar Sitemap
 
 on:
@@ -28,7 +27,8 @@ jobs:
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git add sitemap.xml
-        git commit -m "Actualizar sitemap.xml"
+        git commit -m "Actualizar sitemap.xml" || echo "No hay cambios para commitear"  # Previene errores si no hay cambios
+     
     - name: Push cambios
       uses: ad-m/github-push-action@v0.6.0
       with:
