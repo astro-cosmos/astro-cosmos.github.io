@@ -21,5 +21,7 @@ def generate_sitemap(directory):
         f.write("\n".join(urls))
         f.write('\n</urlset>')
 
-generate_sitemap('htmls/')
+if __name__ == "__main__":
+    generate_sitemap('htmls/')
+
 
