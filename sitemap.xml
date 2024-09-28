@@ -8,7 +8,16 @@
         <priority>1.0</priority>
     </url>
       
-  <!-- Artículo 7 -->
+  <!-- Artículo 8 -->
+    <url>
+        <loc>https://astro-cosmos.github.io/articulo8.html</loc>
+        <lastmod>2024-09-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url> 
+    
+    
+    <!-- Artículo 7 -->
     <url>
         <loc>https://astro-cosmos.github.io/articulo7.html</loc>
         <lastmod>2024-09-25</lastmod>
